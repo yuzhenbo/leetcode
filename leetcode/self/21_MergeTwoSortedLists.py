@@ -9,9 +9,14 @@ class ListNode(object):
 
 class Solution(object):
     def mergeTwoLists(self, l1, l2):
+        """
+        :type l1: ListNode
+        :type l2: ListNode
+        :rtype: ListNode
+        """
         curr = dummy = ListNode(0)
         while l1 and l2:
-             if l1.val < l2.val:
+            if l1.val < l2.val:
                 curr.next = l1
                 l1 = l1.next
             else:
@@ -29,6 +34,6 @@ l2 = ListNode(1)
 l2.next = ListNode(2)
 
 # l1 = ListNode([1,3,4])
-# l2 = ListNode([0,2,3])11
+# l2 = ListNode([0,2,3])111
 
 print(Solution().mergeTwoLists(l1, l2))

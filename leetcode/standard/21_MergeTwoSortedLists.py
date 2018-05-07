@@ -1,3 +1,12 @@
+
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on 2018/5/5
+@author: yuzhenbo
+"""
+
+
 class ListNode(object):
     def __init__(self, x):
         self.val = x
@@ -16,9 +25,10 @@ class Solution:
         return l1 or l2
 
 
+
 l1 = ListNode(0)
 l1.next = ListNode(3)
-# l1.next = ListNode(4)
+
 
 l2 = ListNode(1)
 l2.next = ListNode(2)

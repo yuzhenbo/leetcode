@@ -22,7 +22,7 @@ class Solution(object):
         else:
             return 0
 
-Input = 123
+Input = 1231
 
 A = Solution()
 B = A.reverse(Input)
